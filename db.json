@@ -1,0 +1,32 @@
+{
+  "userData": [
+    {
+      "name": "gamzenur",
+      "surname": "demir",
+      "phone": 5398518625,
+      "password": "nurgamze",
+      "id": 1
+    },
+    {
+      "name": null,
+      "surname": null,
+      "phone": null,
+      "password": null,
+      "id": 2
+    },
+    {
+      "name": "şulenur ",
+      "surname": "altun",
+      "phone": 18465,
+      "password": "kssk",
+      "id": 3
+    },
+    {
+      "name": null,
+      "surname": null,
+      "phone": null,
+      "password": null,
+      "id": 4
+    }
+  ]
+}

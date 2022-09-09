@@ -27,6 +27,20 @@
       "phone": null,
       "password": null,
       "id": 4
+    },
+    {
+      "name": "osman",
+      "surname": "demir",
+      "phone": 8656,
+      "password": "123",
+      "id": 5
+    },
+    {
+      "name": "ahmet",
+      "surname": "mehmet",
+      "phone": 213,
+      "password": "xxx",
+      "id": 6
     }
   ]
 }

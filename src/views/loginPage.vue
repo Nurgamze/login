@@ -55,8 +55,7 @@
                         <div class="form-outline mb-4">
                           <input
                             v-model="userData.name"
-                            type="username"
-                            id="form2Example17"
+                            type="name"
                             class="form-control form-control-lg"
                             placeholder="name"
                           />
@@ -70,7 +69,6 @@
                           <input
                             v-model="userData.password"
                             type="password"
-                            id="form2Example27"
                             class="form-control form-control-lg"
                             placeholder="password"
                           />
@@ -136,24 +134,18 @@ export default {
       },
     };
   },
-  methods: {
-    onSubmit() {
-      if (this.userData.name != "" && this.userData.password != "") {
-        if (
-          this.userData.name == this.$userData.name &&
-          this.userData.password == this.$userData.password
-        ) {
-          this.$router.push({ name: "home" });
-        } else {
-          console.log("The username and / or password is incorrect");
-        }
-      }
-    },
 
-    // this.$appAxios.get(
-    //   `/userData?name=${this.userData.username}&password=${this.userData.password}`
-    // );
-    // this.$router.push({ name: "home" });
+  methods: {
+    
+    onSubmit() {
+      this.$appAxios
+        .get(
+          `/userData?name=${this.userData.name}$password=${this.userData.password}`
+        )
+        .then((login_response) => {
+          console.log(login_response);
+        });
+    },
   },
 };
 </script>
